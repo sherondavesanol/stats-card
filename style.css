@@ -1,0 +1,132 @@
+/* GLOBAL */
+html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-inter {
+    font-family: "Inter", "Lexend Deca", sans-serif;
+}
+
+.lexend {
+    font-family: "Lexend Deca", "Inter", sans-serif;
+}
+
+.purple {
+    color: rgb(185, 104, 223);
+}
+
+body {
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    border-radius: 15px;
+    background-color: rgb(62, 42, 95);
+    margin: 3rem 1rem;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    background: url("images/image-header-mobile.jpg") no-repeat;
+    background-color: rgba(104, 64, 141, 0.85);
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 16rem;
+    width: 100%;
+}
+
+.text-container {
+    color: #ffffff;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.header-text {
+    margin-top: 1.5rem;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.stat-item {
+    margin: 1rem 0;
+    line-height: 1.75rem;
+}
+
+.stat-header {
+    font-family: "Inter", "Lexend Deca", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stat-description {
+    font-size: 0.75rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+        margin: 5.5rem;
+    }
+
+    .flex {
+        flex-direction: row-reverse;
+    }
+
+    .image {
+        background: url(/images/image-header-desktop.jpg) no-repeat;
+        background-color: rgba(104, 64, 141, 0.85);
+        background-blend-mode: overlay;
+        background-size: cover;
+        height: auto;
+    }
+
+    .text-container {
+        text-align: start;
+        padding: 3rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main-text {
+        width: 80%;
+    }
+
+    .header-text {
+        font-size: 1.15rem;
+    }
+
+    .description {
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+
+    .stats {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+}
